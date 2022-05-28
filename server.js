@@ -16,7 +16,8 @@ const app = express()
 const corsOptions = {
 	origin: process.env.PUBLIC_URL,
 	optionsSuccessStatus: 200, // For legacy browser support
-	// method: "GET, POST, DELETE,",
+	method: "GET, POST, DELETE,",
+  credentials: true
 };
 
 app.use(express.json());
